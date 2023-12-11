@@ -65,12 +65,12 @@
             <h1 class="text-xl font-bold underline mb-4">Welcome to my new dom project - Class-8</h1>
 
             <form action="" method="POST">
-                <!--  -->
+                <!-- Text Input -->
                 <div class="mb-4">
                     <label class="block text-sm" for="name">Name: </label>
                     <input value="<?php echo $name; ?>" type="text" name="name" id="name" class="border mt-1 p-2 w-full rounded" >
                 </div>
-                <!--  -->
+                <!-- Radio Button -->
                 <div class="mb-4">
                     <label class="block text-sm" for="gender">Gender:</label>
                     <div class="bt-1 spece-x-4">
@@ -84,22 +84,22 @@
                         </label>
                     </div>
                 </div>
-                <!--  -->
+                <!-- Checkbox -->
                 <div class="mb-4">
                     <label class="block text-sm" for="subscribe">Subscribe: </label>
                     <input <?php echo $subscribe === "Yes" ? "checked" : ''; ?> type="checkbox" name="subscribe" id="subscribe" class="form-checkbox">
                 </div>
-                <!--  -->
+                <!-- Date Picker using flatpickr -->
                 <div class="mb-4">
                     <label class="block text-sm" for="datepicker">Pick a date: </label>
                     <input value="<?php echo $date; ?>" type="text" name="date" id="datepicker" class="border mt-1 p-2 w-full rounded">
                 </div>
-                <!--  -->
+                <!-- Time Picker using flatpickr -->
                 <div class="mb-4">
                     <label class="block text-sm" for="timepicker">Pick a Time: </label>
                     <input value="<?php echo $time; ?>" type="text" name="time" id="timepicker" class="border mt-1 p-2 w-full rounded">
                 </div>
-                <!--  -->
+                <!-- Multiselect Dropdown using Select2 -->
                 <div class="mb-4">
                     <label class="block text-sm" for="options">Select Options: </label>
                     <select name="options[]" id="options" multiple class="border mt-1 p-2 w-full rounded">
@@ -110,7 +110,7 @@
                         <option <?php echo in_array('Option5', $options) ? "selected" : ''; ?> value="Option5">Option 5</option>
                     </select>
                 </div>
-                <!--  -->
+                <!-- Select Dropdown -->
                 <div class="mb-4">
                     <label class="block text-sm" for="district">Select a District: </label>
                     <select name="district" id="district" class="border mt-1 p-2 w-full rounded">
@@ -138,7 +138,7 @@
                         </label>
                     </div>
                 </div>
-                <!--  -->
+                <!-- Submit Button -->
                 <div class="mb-4">
                     <button type="submit" class="bg-gray-600 text-white border mt-1 p-2 rounded">Submit</button>
                 </div>

@@ -24,8 +24,8 @@ if (!$images) {
 <div class="max-w-6xl mx-auto">
     <div class="item-center">
         <form action="" method="post" enctype="multipart/form-data" class="mb-4">
-            <label for="image" class="block text-sm ">Upload Image</label>
-            <input type="file" id="image" name="image" class="mt-1 p-2 border rounded-md">
+            <label for="image" class="block text-sm ">Upload Images</label>
+            <input type="file" id="image" name="image[]" multiple class="mt-1 p-2 border rounded-md">
             <button type="submit" class="mt-2 px-4 py-2 bg-gray-500 text-white rounded-md">Upload
             </button>
         </form>
